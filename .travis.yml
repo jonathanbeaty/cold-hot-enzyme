@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: jFg9hYVG35JCTw7g69hfqnUzQVij+ln2HSZaJ72fdPfcJS4yBmfjW2XZ4Rn2koLQuUq6TmdFhOqhOtDTakW8l5mZQb4asPI/IeS+pV5F5lzfBzXkmv0Mm6VHO1or8+vl8bG6Uq7EUtyk1VYQ3eyoiKkeFqu4LbSP6SIb7QmOgWjwTpIQVh8mNuz0oxih4tI0EySNIDKB0OxF+ox3dVsLQGs17vOLF+PqO2zKYJMSunTiBxZiUzErY6e4umrL8MiaCTKkTCbuGSPoAyTbNSwJlDP8ESRFmuBszOElNPx/fD4kepsoDywlifb5H17vyfywpvJZ/3Qo4NKCyuOGCGHd2LNfhE/AFgrbBg7MFhf2HoIlu4rizlyu6O6kUdBNmlWN04p0Da8GhDQbaXZTHq7qVYtT9sRVBXP8xegHsuMFxL5Vpvf5rr1z5umyb1QQ2po2Aei8NbyfU3NXUjGieoUqwDzfcg+bvaMLztp9xGP/4wmCfGH811Qcz4eQjrS6SxU/49W9NG+9ywgywlQggWn5P8H76kiguSL2hrRbeUD7yrybcpH2Fk0ncJvMPms5aRVN2HEmsytzLNU61BH24x2/86gvOvBndiv/vSSk2gO+bWnedxq2d+i5CQKn+nb7UFtWk+pSk9ZBYU8yn7O7YkXES7bcD2o/RUZ5Aqif7lo7yyU=
+  app: infinite-meadow-49582
+  on:
+    repo: jonathanbeaty/cold-hot-enzyme
